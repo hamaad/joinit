@@ -11,14 +11,28 @@ import Firebase
 
 class FirstViewController: UIViewController {
 
+    
+    var myRootRef = Firebase(url: "https://sizzling-fire-4884.firebaseio.com/")
+    // Create a reference to a Firebase location
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        myRootRef.observeEventType(.Value, withBlock: {
+            snapshot in
+            print("\(snapshot.key) -> \(snapshot.value)")
+        })
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func sendMsg(message:String)
+    {
+        myRootRef.setValue(message) // Write data to my Firebase database
     }
 
 
