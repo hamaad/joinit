@@ -237,7 +237,7 @@
 				TargetAttributes = {
 					377D482C1C6B26100081FC75 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 9XES2RT3HL;
+						DevelopmentTeam = ZP378ZYKXP;
 					};
 					377D48421C6B26100081FC75 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -502,7 +502,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = joinit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.joinit;
+				PRODUCT_BUNDLE_IDENTIFIER = org.joinit2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -517,7 +517,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = joinit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.joinit;
+				PRODUCT_BUNDLE_IDENTIFIER = org.joinit2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

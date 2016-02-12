@@ -164,27 +164,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mut-Xu-fAO">
-                                <rect key="frame" x="80" y="180" width="440" height="240"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mut-Xu-fAO">
+                                <rect key="frame" x="20" y="180" width="560" height="240"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aVm-V8-O0s">
-                                        <rect key="frame" x="0.0" y="0.0" width="440" height="240"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aVm-V8-O0s">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="240"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="258" placeholderIntrinsicHeight="120" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRt-S6-L8j">
-                                                <rect key="frame" x="91" y="0.0" width="258" height="120"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="258" placeholderIntrinsicHeight="120" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRt-S6-L8j">
+                                                <rect key="frame" x="151" y="0.0" width="258" height="120"/>
+                                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="70"/>
                                                 <state key="normal" title="LOGIN">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="399" placeholderIntrinsicHeight="120" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oj-F7-1jp">
-                                                <rect key="frame" x="21" y="120" width="399" height="120"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="399" placeholderIntrinsicHeight="120" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oj-F7-1jp">
+                                                <rect key="frame" x="81" y="120" width="399" height="120"/>
+                                                <fontDescription key="fontDescription" name="DevanagariSangamMN" family="Devanagari Sangam MN" pointSize="70"/>
                                                 <state key="normal" title="REGISTER">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="0oj-F7-1jp" firstAttribute="bottom" secondItem="aVm-V8-O0s" secondAttribute="bottomMargin" constant="250" id="07q-Tu-TEc"/>
+                                            <constraint firstItem="qRt-S6-L8j" firstAttribute="top" secondItem="aVm-V8-O0s" secondAttribute="topMargin" constant="250" id="0bA-Iu-qH0"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -192,9 +196,8 @@
                         <color key="backgroundColor" red="0.0" green="0.78342305346805841" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="mut-Xu-fAO" secondAttribute="trailing" constant="60" id="3RM-AV-iKh"/>
-                            <constraint firstItem="mut-Xu-fAO" firstAttribute="top" secondItem="ZNd-hh-ggE" secondAttribute="bottom" constant="20" id="OoM-QN-PVp"/>
-                            <constraint firstItem="mut-Xu-fAO" firstAttribute="leading" secondItem="0Sb-aK-hyl" secondAttribute="leadingMargin" constant="60" id="wtR-0Q-3tF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mut-Xu-fAO" secondAttribute="trailing" id="3RM-AV-iKh"/>
+                            <constraint firstItem="mut-Xu-fAO" firstAttribute="leading" secondItem="0Sb-aK-hyl" secondAttribute="leadingMargin" id="wtR-0Q-3tF"/>
                         </constraints>
                     </view>
                 </viewController>
