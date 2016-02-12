@@ -3,7 +3,7 @@
 //  joinit
 //
 //  Created by Hamaad Markhiani and Christian Galang on 2/10/16.
-//  Another comment 23456
+//  Another comment ham
 //  Copyright © 2016 HamAndCheese. All rights reserved.
 //
 
