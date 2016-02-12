@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372D9AC71C6D71EE009A92B4 /* joinit icon in Resources */ = {isa = PBXBuildFile; fileRef = 372D9AC61C6D71ED009A92B4 /* joinit icon */; };
 		377D48311C6B26100081FC75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D48301C6B26100081FC75 /* AppDelegate.swift */; };
 		377D48331C6B26100081FC75 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D48321C6B26100081FC75 /* FirstViewController.swift */; };
 		377D48351C6B26100081FC75 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D48341C6B26100081FC75 /* SecondViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		372D9AC61C6D71ED009A92B4 /* joinit icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "joinit icon"; sourceTree = "<group>"; };
 		377D482D1C6B26100081FC75 /* joinit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = joinit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377D48301C6B26100081FC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		377D48321C6B26100081FC75 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -81,9 +83,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		372D9AC51C6D71DA009A92B4 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				372D9AC61C6D71ED009A92B4 /* joinit icon */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		377D48241C6B26100081FC75 = {
 			isa = PBXGroup;
 			children = (
+				372D9AC51C6D71DA009A92B4 /* Icons */,
 				377D482F1C6B26100081FC75 /* joinit */,
 				377D48461C6B26100081FC75 /* joinitTests */,
 				377D48511C6B26100081FC75 /* joinitUITests */,
@@ -263,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				377D483D1C6B26100081FC75 /* LaunchScreen.storyboard in Resources */,
+				372D9AC71C6D71EE009A92B4 /* joinit icon in Resources */,
 				377D483A1C6B26100081FC75 /* Assets.xcassets in Resources */,
 				377D48381C6B26100081FC75 /* Main.storyboard in Resources */,
 			);
