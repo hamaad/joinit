@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Mdn-ub-0Cr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lve-vY-lk5">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -96,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--Registration View Controller-->
         <scene sceneID="UOe-T5-o3e">
             <objects>
-                <viewController id="lve-vY-lk5" sceneMemberID="viewController">
+                <viewController id="lve-vY-lk5" customClass="RegistrationViewController" customModule="joinit" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nbv-JT-4Xv"/>
                         <viewControllerLayoutGuide type="bottom" id="2Mo-NS-nPr"/>
@@ -130,6 +130,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjq-wS-wwS">
                                         <rect key="frame" x="0.0" y="116" width="560" height="30"/>
                                         <state key="normal" title="Register"/>
+                                        <connections>
+                                            <action selector="registerButton:" destination="lve-vY-lk5" eventType="touchUpInside" id="jmi-Vp-Oyx"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -147,6 +150,11 @@
                             <constraint firstItem="KWI-lD-5Zl" firstAttribute="trailing" secondItem="LN0-hr-IrD" secondAttribute="trailingMargin" id="oGi-7q-Apv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="ed1-Ng-UPv" id="WtS-fj-a6d"/>
+                        <outlet property="passwordTextField" destination="Kjr-vj-wW6" id="8P0-7A-P1i"/>
+                        <outlet property="registerButton" destination="cjq-wS-wwS" id="YYM-p0-tMi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JFZ-b5-ov8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
