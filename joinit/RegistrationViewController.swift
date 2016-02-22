@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 
-class RegistrationViewController: UIViewController {
+class RegistrationViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!     // Establish a variable for the email address text field
     @IBOutlet weak var resultLabel: UILabel! // Where to display text if there was an error with login
@@ -34,6 +34,12 @@ class RegistrationViewController: UIViewController {
             }
         )
     }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {    // function to make the keyboard disappear on return
+        textField.resignFirstResponder()
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
