@@ -28,6 +28,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             else                // if there is no error...
             {
                 self.resultLabel.text = "Successfully logged in user number: " + String(self.databaseConnection.authData.uid)
+                self.performSegueWithIdentifier("about", sender: sender)
             }
             
             

@@ -27,8 +27,9 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
                 if error != nil {
                     self.resultLabel.text = "Registration unsuccessful. Invalid email or email registered already."
                 } else {
-                    self.resultLabel.text = "Registration successful! Sending you to login whenever it's made."
+                    self.resultLabel.text = "Registration successful! Sending you to login."
                     // TODO: Send to login screen.
+                    self.performSegueWithIdentifier("toLogin", sender: sender)
                 }
                 
             }
