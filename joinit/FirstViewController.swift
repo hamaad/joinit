@@ -11,7 +11,6 @@ import UIKit
 import Firebase
 
 class FirstViewController: UIViewController {
-
     
     var myRootRef = Firebase(url: "https://sizzling-fire-4884.firebaseio.com/")
     // Create a reference to a Firebase location
@@ -20,6 +19,7 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBarHidden = true //hide navigation bar
         // Do any additional setup after loading the view, typically from a nib.
         
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.blackColor()], forState: .Normal)    // Make the navigation TAB bar a custom color: black
