@@ -12,7 +12,6 @@ import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    var databaseConnection = Firebase(url: "https://sizzling-fire-4884.firebaseio.com/")
     
     @IBOutlet weak var emailTextField: UITextField!     // Establish a variable for the email text field
     @IBOutlet weak var passwordTextField: UITextField!  // Establish a variable for the password text field
@@ -27,7 +26,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             }
             else                // if there is no error...
             {
-                self.resultLabel.text = "Successfully logged in user number: " + String(self.databaseConnection.authData.uid)
+                self.resultLabel.text = "Successfully logged in user number: " + String(databaseConnection.authData.uid)
                 self.performSegueWithIdentifier("about", sender: sender)
             }
             

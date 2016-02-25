@@ -12,14 +12,18 @@ import Firebase
 
 class FirstViewController: UIViewController {
     
-    var myRootRef = Firebase(url: "https://sizzling-fire-4884.firebaseio.com/")
-    // Create a reference to a Firebase location
 
+    @IBOutlet weak var userIDLabel: UILabel!
+    
+    
     @IBOutlet weak var messageTextField: UITextField!   // create a variable for the message text field
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.navigationController?.navigationBarHidden = true //hide navigation bar
+        self.userIDLabel.text = databaseConnection.authData.uid // show the user ID
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName : UIColor.blackColor()], forState: .Normal)    // Make the navigation TAB bar a custom color: black
@@ -31,12 +35,17 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func logOutButton(sender: UIButton) {
+        databaseConnection.unauth() // log out
+        self.performSegueWithIdentifier("toMain", sender: sender)   // segue to main screen
+    }
+    
     @IBAction func sendMessageButton(sender: UIButton) {    // called when the send message button is pressed
         sendMsg(messageTextField.text!)
     }
     func sendMsg(message:String)
     {
-        myRootRef.setValue(message) // Write data to my Firebase database
+        databaseConnection.setValue(message) // Write data to my Firebase database
     }
 
 

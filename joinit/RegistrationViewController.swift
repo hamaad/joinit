@@ -16,8 +16,6 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resultLabel: UILabel! // Where to display text if there was an error with login
     @IBOutlet weak var passwordTextField: UITextField!  // Establish a variable for the password text field
     
-    var databaseConnection = Firebase(url: "https://sizzling-fire-4884.firebaseio.com/") // Establish our database connection and assign it to an variable (object???)
-    
     
     @IBAction func registerButton(sender: UIButton) {
         // Function that is called when user hits the register button
