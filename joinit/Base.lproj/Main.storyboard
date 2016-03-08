@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0N3-Nh-ddI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0N3-Nh-ddI">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -15,80 +15,59 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="center" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="951"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="2Ln-g3-y4e">
-                                <rect key="frame" x="20" y="80" width="560" height="105"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGH-PK-YUI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="951"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="join.it Version 0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drD-6c-6SG">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Enter message..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r7q-sG-aeP">
-                                        <rect key="frame" x="0.0" y="33" width="560" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sag-Lo-Una">
-                                        <rect key="frame" x="0.0" y="75" width="560" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sag-Lo-Una">
+                                        <rect key="frame" x="20" y="461" width="560" height="30"/>
                                         <state key="normal" title="Send Message"/>
                                         <connections>
                                             <action selector="sendMessageButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Mv7-7O-Ndy"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="join.it Version 0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drD-6c-6SG">
+                                        <rect key="frame" x="20" y="465" width="560" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User ID: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEb-Qf-d80">
+                                        <rect key="frame" x="267" y="466" width="66" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuF-9H-YdY">
+                                        <rect key="frame" x="271" y="461" width="55" height="30"/>
+                                        <state key="normal" title="Log Out"/>
+                                        <connections>
+                                            <action selector="logOutButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Kka-Fg-Vgl"/>
+                                        </connections>
+                                    </button>
+                                    <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" placeholder="Enter message..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r7q-sG-aeP">
+                                        <rect key="frame" x="20" y="461" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="r7q-sG-aeP" firstAttribute="leading" secondItem="2Ln-g3-y4e" secondAttribute="leading" id="0zH-Ko-pP1"/>
-                                    <constraint firstAttribute="trailing" secondItem="r7q-sG-aeP" secondAttribute="trailing" id="zUK-pm-GRf"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BuF-9H-YdY">
-                                <rect key="frame" x="272" y="260" width="55" height="30"/>
-                                <state key="normal" title="Log Out"/>
-                                <connections>
-                                    <action selector="logOutButton:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Kka-Fg-Vgl"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEb-Qf-d80">
-                                <rect key="frame" x="267" y="315.5" width="66" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="rect" keyPath="frame">
+                                        <rect key="value" x="0.0" y="0.0" width="320" height="416"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="320" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.78342305349999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="XEb-Qf-d80" secondAttribute="trailing" constant="130" id="6kj-9N-vyX"/>
-                            <constraint firstItem="2Ln-g3-y4e" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="97H-g8-weE"/>
-                            <constraint firstItem="BuF-9H-YdY" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="CdZ-CU-GeN"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="BuF-9H-YdY" secondAttribute="trailing" constant="230" id="EBa-AD-xpT"/>
-                            <constraint firstItem="BuF-9H-YdY" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="100" id="EF8-yv-pjI"/>
-                            <constraint firstItem="BuF-9H-YdY" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="300" id="EKe-jW-dIL"/>
-                            <constraint firstItem="BuF-9H-YdY" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="230" id="Joz-ge-CQu"/>
-                            <constraint firstItem="BuF-9H-YdY" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="Nvl-VT-Tqq"/>
-                            <constraint firstItem="BuF-9H-YdY" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="fax-BB-bC2"/>
-                            <constraint firstItem="XEb-Qf-d80" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="130" id="hSP-H6-Wki"/>
-                            <constraint firstItem="XEb-Qf-d80" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="50" id="j2U-5r-ddU"/>
-                            <constraint firstItem="XEb-Qf-d80" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="j5y-Yw-KU1"/>
-                            <constraint firstItem="2Ln-g3-y4e" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="60" id="nZC-XU-WWx"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="2Ln-g3-y4e" secondAttribute="trailing" id="xYp-ZI-3Cn"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="6kj-9N-vyX"/>
-                                <exclude reference="hSP-H6-Wki"/>
-                                <exclude reference="EBa-AD-xpT"/>
-                                <exclude reference="EF8-yv-pjI"/>
-                                <exclude reference="EKe-jW-dIL"/>
-                                <exclude reference="Joz-ge-CQu"/>
-                                <exclude reference="fax-BB-bC2"/>
-                            </mask>
-                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="User Profile" image="first" id="acW-dT-cKf"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="1000"/>
                     <connections>
                         <outlet property="messageTextField" destination="r7q-sG-aeP" id="zpX-oV-alf"/>
                         <outlet property="userIDLabel" destination="XEb-Qf-d80" id="KtG-S8-qzb"/>
@@ -148,7 +127,7 @@
                         <viewControllerLayoutGuide type="bottom" id="2Mo-NS-nPr"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="LN0-hr-IrD">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="951"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="KWI-lD-5Zl">
@@ -230,7 +209,7 @@
                         <viewControllerLayoutGuide type="bottom" id="BFi-dZ-aVB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xyl-G8-I3f">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="951"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBv-1V-eFi">
@@ -315,7 +294,7 @@
                         <viewControllerLayoutGuide type="bottom" id="TIF-tE-9Cv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0Sb-aK-hyl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="951"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mut-Xu-fAO">
