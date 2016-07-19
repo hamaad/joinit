@@ -1,13 +1,12 @@
 # join.it
 
-The first prototype for the join.it iOS application.
+The join.it iOS application.
 
-Front-end: Swift
-Back-end: Firebase
+Back-end: Firebase (Latest Version as of July 19, 2016)
 
-The purpose of this application is to allow students at the University of Houston connect with the various organizations on campus. 
+The purpose of this application is to allow students at the University of Houston connect with organizations on campus. 
 
-Verified students will be able to leave reviews, search the different organizations, and view upcoming events. 
+Verified students will be able to leave reviews, search through organizations, and view upcoming events.
 
 Made by: Hamaad Markhiani and Christian Galang
 
