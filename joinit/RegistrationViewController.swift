@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
@@ -19,11 +20,10 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func registerButton(sender: UIButton) {
         // Function that is called when user hits the register button
-        databaseConnection.createUser(emailTextField.text, password: passwordTextField.text,
-            withValueCompletionBlock: { error, result in
+        FIRAuth.auth()?.createUserWithEmail(emailTextField.text!, password: passwordTextField.text!) { (user, error) in
                 
                 if error != nil {
-                    self.resultLabel.text = "Registration unsuccessful. Invalid email or email registered already."
+                    self.resultLabel.text = error?.localizedDescription
                 } else {
                     self.resultLabel.text = "Registration successful! Sending you to login."
                     // TODO: Send to login screen.
@@ -31,7 +31,6 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
                 }
                 
             }
-        )
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {    // function to make the keyboard disappear on return

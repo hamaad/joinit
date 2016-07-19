@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 
-var databaseConnection = Firebase(url: "https://sizzling-fire-4884.firebaseio.com/")    // Declare a global variable to connect to the database so different classes can connect and alter the database without redeclaring redundant variables
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
         return true
     }
 

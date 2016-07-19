@@ -8,7 +8,7 @@
 
 import UIKit
 import Firebase
-
+import FirebaseAuth
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -18,19 +18,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var resultLabel: UILabel!            // Establish a variable for the result label
     
     @IBAction func loginButton(sender: UIButton) {      // The login button function (called when button pressed)
-        databaseConnection.authUser(emailTextField.text, password: passwordTextField.text) {
-            error, authData in
-            if (error != nil)   // if there is an error...
-            {
-                self.resultLabel.text = "An error has occurred while logging in."
+        FIRAuth.auth()?.signInWithEmail(emailTextField.text!, password: passwordTextField.text!) {
+           (user, error) in
+            if let error = error { // if there is an error...
+                self.resultLabel.text = error.localizedDescription
             }
-            else                // if there is no error...
-            {
-                self.resultLabel.text = "Successfully logged in user number: " + String(databaseConnection.authData.uid)
+            else {
+                self.resultLabel.text = "Successfully logged in user number: " + String(FIRAuth.auth()?.currentUser)
                 self.performSegueWithIdentifier("about", sender: sender)
             }
-            
-            
         }
     }
     

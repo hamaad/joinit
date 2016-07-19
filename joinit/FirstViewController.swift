@@ -9,6 +9,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class FirstViewController: UIViewController {
     
@@ -22,7 +23,10 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBarHidden = true //hide navigation bar
-        self.userIDLabel.text = databaseConnection.authData.uid // show the user ID
+
+        let currentUser = FIRAuth.auth()?.currentUser // user!. displayName, email, photoURL, uid
+        
+        self.userIDLabel.text = currentUser!.uid // show the user ID
         
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -36,7 +40,7 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func logOutButton(sender: UIButton) {
-        databaseConnection.unauth() // log out
+        try! FIRAuth.auth()!.signOut() // log out
         self.performSegueWithIdentifier("toMain", sender: sender)   // segue to main screen
     }
     
@@ -45,7 +49,7 @@ class FirstViewController: UIViewController {
     }
     func sendMsg(message:String)
     {
-        databaseConnection.setValue(message) // Write data to my Firebase database
+        print("xd") // Write data to my Firebase database
     }
 
 

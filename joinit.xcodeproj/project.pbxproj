@@ -10,6 +10,7 @@
 		023817A11C6DBC5200EECF43 /* Third View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 023817A01C6DBC5200EECF43 /* Third View.swift */; };
 		372D9AC71C6D71EE009A92B4 /* joinit icon in Resources */ = {isa = PBXBuildFile; fileRef = 372D9AC61C6D71ED009A92B4 /* joinit icon */; };
 		374BC8DF1C7A6A980046F5A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374BC8DE1C7A6A980046F5A4 /* LoginViewController.swift */; };
+		377267C31D3DD76E00C0C037 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 377267C21D3DD76E00C0C037 /* GoogleService-Info.plist */; };
 		377D48311C6B26100081FC75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D48301C6B26100081FC75 /* AppDelegate.swift */; };
 		377D48331C6B26100081FC75 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D48321C6B26100081FC75 /* FirstViewController.swift */; };
 		377D48351C6B26100081FC75 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D48341C6B26100081FC75 /* SecondViewController.swift */; };
@@ -43,6 +44,7 @@
 		023817A01C6DBC5200EECF43 /* Third View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Third View.swift"; sourceTree = "<group>"; };
 		372D9AC61C6D71ED009A92B4 /* joinit icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "joinit icon"; sourceTree = "<group>"; };
 		374BC8DE1C7A6A980046F5A4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		377267C21D3DD76E00C0C037 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		377D482D1C6B26100081FC75 /* joinit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = joinit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377D48301C6B26100081FC75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		377D48321C6B26100081FC75 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 		377D482F1C6B26100081FC75 /* joinit */ = {
 			isa = PBXGroup;
 			children = (
+				377267C21D3DD76E00C0C037 /* GoogleService-Info.plist */,
 				377D48301C6B26100081FC75 /* AppDelegate.swift */,
 				377D48321C6B26100081FC75 /* FirstViewController.swift */,
 				377D48341C6B26100081FC75 /* SecondViewController.swift */,
@@ -284,6 +287,7 @@
 			files = (
 				377D483D1C6B26100081FC75 /* LaunchScreen.storyboard in Resources */,
 				372D9AC71C6D71EE009A92B4 /* joinit icon in Resources */,
+				377267C31D3DD76E00C0C037 /* GoogleService-Info.plist in Resources */,
 				377D483A1C6B26100081FC75 /* Assets.xcassets in Resources */,
 				377D48381C6B26100081FC75 /* Main.storyboard in Resources */,
 			);
